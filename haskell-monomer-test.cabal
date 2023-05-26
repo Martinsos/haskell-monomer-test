@@ -1,0 +1,44 @@
+cabal-version:      2.4
+name:               haskell-monomer-test
+version:            0.1.0.0
+
+-- A short (one-line) description of the package.
+-- synopsis:
+
+-- A longer description of the package.
+-- description:
+
+-- A URL where users can report bugs.
+-- bug-reports:
+
+-- The license under which the package is released.
+-- license:
+author:             Martin Sosic
+maintainer:         sosic.martin@gmail.com
+
+-- A copyright notice.
+-- copyright:
+-- category:
+extra-source-files:
+    CHANGELOG.md
+    README.md
+
+executable haskell-monomer-test
+    main-is:          Main.hs
+    hs-source-dirs:   app
+
+    default-language: Haskell2010
+    ghc-options: -fwarn-incomplete-patterns -threaded
+    default-extensions:
+        OverloadedStrings
+
+    build-depends:
+        base ^>=4.16.4.0
+      , data-default ^>=0.7.1
+      , lens ^>=5.2.2
+      , monomer ^>=1.5.1
+      , text ^>=2.0.2
+      , text-show ^>=3.10.2
+
+    other-modules:
+      Paths_haskell_monomer_test
